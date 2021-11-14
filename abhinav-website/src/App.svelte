@@ -145,11 +145,4 @@
     height: 100vh;
     background-color: rgb(35, 36, 37);;
   }
-	.link > :global(a) {
-        text-decoration: none;
-    }
-    
-    :global(a) {
-        ...
-    }
 </style>
