@@ -1,27 +1,39 @@
-<script>
-	import { Router, Route, Link } from "svelte-routing";
-	import Home from "./Home.svelte"
-	import About from "./About.svelte"
+    
 
-	export let name;
-	export let url =  ""
-</script>
+<h1>
+    About Me
+</h1>
 
-<Router url="{url}">
-	<nav class = "flex-container">
-	  <Link to="/">home</Link>
-	  <Link to="about">About</Link>
-	</nav>
-	  <Route path="about" component="{About}" />
-	  <Route path="/"><Home /></Route>
-	
-  </Router>
-  
+<style>
+    main {
+		text-align: center;
+		padding: 1em;
+		background-color: #232425;
+	}
 
+	h1 {
+		color: #a9a9b3;
+		font-size: 5em;
+		font-weight: 100;
+		text-align: center;
+		margin: 1rem;
+		font-family: "Roboto", sans-serif;
+	}
 
+	.header {
+		height: 100vh;
+		margin-top: 20vh;
+	}
 
-	<style>
-	nav {
+	p {
+		display: block;
+		font-size: xx-large;
+		color: #a9a9b3;
+		font-weight: 500;
+		font-family: "Montserrat", sans-serif;
+	}
+
+		nav {
 		font-family: "Montserrat", sans-serif;
 		font-size: x-large;
 		background-color: #1c1d1e;
@@ -42,17 +54,13 @@
 		justify-content:right;
 		/* margin:4rem;	 */
 		margin-left: 500px;
-		color:black
 	}
 	.flex-container2 {
 		display:flex;
 		justify-content:center;
 		margin-top:1px;
-
 	} 
-	
-		
-	
+
 
 	@media (min-width: 640px) {
 		main {
@@ -61,3 +69,7 @@
 
 	}
 </style>
+
+
+
+
